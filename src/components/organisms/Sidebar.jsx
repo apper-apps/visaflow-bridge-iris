@@ -6,46 +6,66 @@ import { cn } from "@/utils/cn";
 const Sidebar = ({ isOpen, onClose }) => {
   const location = useLocation();
 
-  const menuItems = [
+const menuItems = [
     { path: "/", label: "Dashboard", icon: "LayoutDashboard" },
-    { path: "/applications", label: "Applications", icon: "FileText" },
+    { 
+      path: "/applications", 
+      label: "Applications", 
+      icon: "FileText",
+      submenu: [
+        { path: "/applications/new", label: "New Application", icon: "Plus" }
+      ]
+    },
     { path: "/clients", label: "Clients", icon: "Users" },
     { path: "/documents", label: "Documents", icon: "FolderOpen" },
     { path: "/validation", label: "Validation", icon: "Shield" },
     { path: "/settings", label: "Settings", icon: "Settings" }
   ];
 
-  const MenuItem = ({ item }) => {
+const MenuItem = ({ item, isSubmenu = false }) => {
     const isActive = location.pathname === item.path;
+    const hasActiveSubmenu = item.submenu?.some(subItem => location.pathname === subItem.path);
     
     return (
-      <NavLink
-        to={item.path}
-        className={({ isActive }) =>
-          cn(
-            "flex items-center space-x-3 px-4 py-3 rounded-lg transition-all duration-200 group",
-            isActive
-              ? "bg-gradient-to-r from-primary to-secondary text-white shadow-lg"
-              : "text-gray-600 hover:bg-primary/5 hover:text-primary"
-          )
-        }
-        onClick={() => window.innerWidth < 1024 && onClose?.()}
-      >
-        {({ isActive }) => (
-          <>
-            <ApperIcon 
-              name={item.icon} 
-              className={cn(
-                "w-5 h-5 transition-colors duration-200",
-                isActive 
-                  ? "text-white" 
-                  : "text-gray-500 group-hover:text-primary"
-              )} 
-            />
-            <span className="font-medium">{item.label}</span>
-          </>
+      <div>
+        <NavLink
+          to={item.path}
+          className={({ isActive }) =>
+            cn(
+              "flex items-center space-x-3 px-4 py-3 rounded-lg transition-all duration-200 group",
+              isSubmenu && "ml-4 px-3 py-2",
+              isActive || hasActiveSubmenu
+                ? "bg-gradient-to-r from-primary to-secondary text-white shadow-lg"
+                : "text-gray-600 hover:bg-primary/5 hover:text-primary"
+            )
+          }
+          onClick={() => window.innerWidth < 1024 && onClose?.()}
+        >
+          {({ isActive }) => (
+            <>
+              <ApperIcon 
+                name={item.icon} 
+                className={cn(
+                  "w-5 h-5 transition-colors duration-200",
+                  isSubmenu && "w-4 h-4",
+                  isActive || hasActiveSubmenu
+                    ? "text-white" 
+                    : "text-gray-500 group-hover:text-primary"
+                )} 
+              />
+              <span className={cn("font-medium", isSubmenu && "text-sm")}>{item.label}</span>
+            </>
+          )}
+        </NavLink>
+        
+        {item.submenu && (
+          <div className="mt-1 space-y-1">
+            {item.submenu.map((subItem) => (
+              <MenuItem key={subItem.path} item={subItem} isSubmenu={true} />
+            ))}
+          </div>
         )}
-      </NavLink>
+      </div>
     );
   };
 
