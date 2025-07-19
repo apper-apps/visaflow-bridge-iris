@@ -1,0 +1,47 @@
+[
+  {
+    "Id": 1,
+    "applicationId": 1,
+    "field": "passport_validity",
+    "status": "pass",
+    "message": "Passport valid for required duration",
+    "severity": "info",
+    "category": "Document Verification"
+  },
+  {
+    "Id": 2,
+    "applicationId": 1,
+    "field": "skills_assessment",
+    "status": "pass",
+    "message": "Skills assessment meets requirements",
+    "severity": "info",
+    "category": "Eligibility"
+  },
+  {
+    "Id": 3,
+    "applicationId": 2,
+    "field": "english_proficiency",
+    "status": "warning",
+    "message": "IELTS score below recommended level",
+    "severity": "medium",
+    "category": "Language Requirements"
+  },
+  {
+    "Id": 4,
+    "applicationId": 3,
+    "field": "health_declaration",
+    "status": "fail",
+    "message": "Health examination required",
+    "severity": "high",
+    "category": "Health Requirements"
+  },
+  {
+    "Id": 5,
+    "applicationId": 4,
+    "field": "sponsor_approval",
+    "status": "pass",
+    "message": "Sponsor approval confirmed",
+    "severity": "info",
+    "category": "Sponsorship"
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "Id": 1,
+    "applicationId": 1,
+    "type": "Passport",
+    "fileName": "sarah_chen_passport.pdf",
+    "url": "/documents/sarah_chen_passport.pdf",
+    "status": "Verified",
+    "uploadedAt": "2024-01-15T11:00:00Z",
+    "size": "2.4 MB"
+  },
+  {
+    "Id": 2,
+    "applicationId": 1,
+    "type": "Employment Contract",
+    "fileName": "sarah_chen_contract.pdf",
+    "url": "/documents/sarah_chen_contract.pdf",
+    "status": "Verified",
+    "uploadedAt": "2024-01-15T11:15:00Z",
+    "size": "1.8 MB"
+  },
+  {
+    "Id": 3,
+    "applicationId": 1,
+    "type": "Skills Assessment",
+    "fileName": "sarah_chen_skills.pdf",
+    "url": "/documents/sarah_chen_skills.pdf",
+    "status": "Verified",
+    "uploadedAt": "2024-01-15T11:30:00Z",
+    "size": "3.2 MB"
+  },
+  {
+    "Id": 4,
+    "applicationId": 2,
+    "type": "Passport",
+    "fileName": "rajesh_patel_passport.pdf",
+    "url": "/documents/rajesh_patel_passport.pdf",
+    "status": "Pending Review",
+    "uploadedAt": "2024-01-18T10:00:00Z",
+    "size": "2.1 MB"
+  },
+  {
+    "Id": 5,
+    "applicationId": 2,
+    "type": "Qualifications",
+    "fileName": "rajesh_patel_degree.pdf",
+    "url": "/documents/rajesh_patel_degree.pdf",
+    "status": "Verified",
+    "uploadedAt": "2024-01-18T10:15:00Z",
+    "size": "1.5 MB"
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "Id": 1,
+    "visaType": "482 TSS",
+    "stage": 4,
+    "status": "Document Generation",
+    "clientId": 1,
+    "agentId": 1,
+    "createdAt": "2024-01-15T10:30:00Z",
+    "updatedAt": "2024-01-20T14:45:00Z",
+    "completionPercentage": 65,
+    "priority": "High",
+    "estimatedCompletion": "2024-01-25T17:00:00Z"
+  },
+  {
+    "Id": 2,
+    "visaType": "482 TSS",
+    "stage": 2,
+    "status": "Information Collection",
+    "clientId": 2,
+    "agentId": 1,
+    "createdAt": "2024-01-18T09:15:00Z",
+    "updatedAt": "2024-01-19T16:20:00Z",
+    "completionPercentage": 35,
+    "priority": "Medium",
+    "estimatedCompletion": "2024-01-28T17:00:00Z"
+  },
+  {
+    "Id": 3,
+    "visaType": "482 TSS",
+    "stage": 3,
+    "status": "Validation",
+    "clientId": 3,
+    "agentId": 1,
+    "createdAt": "2024-01-20T11:00:00Z",
+    "updatedAt": "2024-01-21T13:30:00Z",
+    "completionPercentage": 45,
+    "priority": "High",
+    "estimatedCompletion": "2024-01-26T17:00:00Z"
+  },
+  {
+    "Id": 4,
+    "visaType": "482 TSS",
+    "stage": 5,
+    "status": "Agent Review",
+    "clientId": 4,
+    "agentId": 1,
+    "createdAt": "2024-01-10T08:45:00Z",
+    "updatedAt": "2024-01-21T11:15:00Z",
+    "completionPercentage": 85,
+    "priority": "Critical",
+    "estimatedCompletion": "2024-01-23T17:00:00Z"
+  },
+  {
+    "Id": 5,
+    "visaType": "482 TSS",
+    "stage": 6,
+    "status": "Ready for Submission",
+    "clientId": 5,
+    "agentId": 1,
+    "createdAt": "2024-01-05T14:20:00Z",
+    "updatedAt": "2024-01-21T10:00:00Z",
+    "completionPercentage": 100,
+    "priority": "Critical",
+    "estimatedCompletion": "2024-01-22T17:00:00Z"
+  }
+]

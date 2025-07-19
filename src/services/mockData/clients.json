@@ -1,0 +1,62 @@
+[
+  {
+    "Id": 1,
+    "firstName": "Sarah",
+    "lastName": "Chen",
+    "email": "sarah.chen@email.com",
+    "phone": "+61 412 345 678",
+    "passportNumber": "PA1234567",
+    "nationality": "Singapore",
+    "dateOfBirth": "1988-03-15",
+    "occupation": "Software Engineer",
+    "employer": "TechCorp Australia"
+  },
+  {
+    "Id": 2,
+    "firstName": "Rajesh",
+    "lastName": "Patel",
+    "email": "rajesh.patel@email.com",
+    "phone": "+61 423 456 789",
+    "passportNumber": "PB2345678",
+    "nationality": "India",
+    "dateOfBirth": "1985-07-22",
+    "occupation": "Data Analyst",
+    "employer": "DataFlow Solutions"
+  },
+  {
+    "Id": 3,
+    "firstName": "Maria",
+    "lastName": "Rodriguez",
+    "email": "maria.rodriguez@email.com",
+    "phone": "+61 434 567 890",
+    "passportNumber": "PC3456789",
+    "nationality": "Philippines",
+    "dateOfBirth": "1990-11-08",
+    "occupation": "Registered Nurse",
+    "employer": "Melbourne Health"
+  },
+  {
+    "Id": 4,
+    "firstName": "James",
+    "lastName": "Smith",
+    "email": "james.smith@email.com",
+    "phone": "+61 445 678 901",
+    "passportNumber": "PD4567890",
+    "nationality": "United Kingdom",
+    "dateOfBirth": "1982-12-03",
+    "occupation": "Marketing Manager",
+    "employer": "Brand Solutions Ltd"
+  },
+  {
+    "Id": 5,
+    "firstName": "Li",
+    "lastName": "Wei",
+    "email": "li.wei@email.com",
+    "phone": "+61 456 789 012",
+    "passportNumber": "PE5678901",
+    "nationality": "China",
+    "dateOfBirth": "1987-09-14",
+    "occupation": "Accountant",
+    "employer": "Financial Services Group"
+  }
+]
