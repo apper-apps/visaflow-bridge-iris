@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import AddClientModal from "@/components/molecules/AddClientModal";
-import ViewClientModal from "@/components/molecules/ViewClientModal";
-import EditClientModal from "@/components/molecules/EditClientModal";
 import { toast } from "react-toastify";
 import ApperIcon from "@/components/ApperIcon";
 import Empty from "@/components/ui/Empty";
 import Error from "@/components/ui/Error";
 import Loading from "@/components/ui/Loading";
+import EditClientModal from "@/components/molecules/EditClientModal";
+import AddClientModal from "@/components/molecules/AddClientModal";
+import ViewClientModal from "@/components/molecules/ViewClientModal";
 import Card from "@/components/atoms/Card";
 import Badge from "@/components/atoms/Badge";
 import Button from "@/components/atoms/Button";
@@ -44,9 +44,9 @@ const Clients = () => {
     `${client.firstName} ${client.lastName}`.toLowerCase().includes(searchQuery.toLowerCase()) ||
     client.email.toLowerCase().includes(searchQuery.toLowerCase()) ||
     client.nationality.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+);
 
-const handleAddClient = async (clientData) => {
+  const handleAddClient = async (clientData) => {
     try {
       const newClient = await clientService.create(clientData);
       setClients(prev => [...prev, newClient]);
@@ -232,9 +232,9 @@ onAction={openAddModal}
                     </Button>
                   </div>
                 </div>
-              </Card>
+</Card>
             </motion.div>
-))}
+          ))}
         </motion.div>
       )}
       {/* Modals */}
@@ -258,5 +258,6 @@ onAction={openAddModal}
       />
     </div>
   );
+};
 
 export default Clients;
