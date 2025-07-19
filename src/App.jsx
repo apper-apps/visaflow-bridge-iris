@@ -5,7 +5,6 @@ import Layout from "@/components/organisms/Layout";
 import Documents from "@/components/pages/Documents";
 import Applications from "@/components/pages/Applications";
 import ApplicationDetail from "@/components/pages/ApplicationDetail";
-import NewApplication from "@/components/pages/NewApplication";
 import Clients from "@/components/pages/Clients";
 import Validation from "@/components/pages/Validation";
 import Dashboard from "@/components/pages/Dashboard";
@@ -15,13 +14,12 @@ function App() {
   return (
     <>
 <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Dashboard />} />
-            <Route path="applications" element={<Applications />} />
-            <Route path="applications/new" element={<NewApplication />} />
-            <Route path="applications/:id" element={<ApplicationDetail />} />
-            <Route path="clients" element={<Clients />} />
-            <Route path="documents" element={<Documents />} />
+<Route path="/" element={<Layout />}>
+          <Route index element={<Dashboard />} />
+          <Route path="applications" element={<Applications />} />
+          <Route path="applications/:id" element={<ApplicationDetail />} />
+          <Route path="clients" element={<Clients />} />
+          <Route path="documents" element={<Documents />} />
             <Route path="validation" element={<Validation />} />
           <Route path="settings" element={<Settings />} />
         </Route>
